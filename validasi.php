@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Validasi</title>
+    <style>
+        .error{
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
@@ -103,16 +108,29 @@
         </table>
     </form>
 
-    <?php 
-
-        echo "<h2>Data yang anda isi : </h2>";
-        
-        echo $nama. "<br>";
-        echo $email. "<br>";
-        echo $website. "<br>";
-        echo $comment. "<br>";
-        echo $gender. "<br>";
-    ?>
+    <h2>Data anda : </h2>
+    <table border="1">
+    <tr>
+                <td>Nama : </td>
+                <td><?= $nama?></td>
+            </tr>
+            <tr>
+                <td>E-mail : </td>
+                <td><?= $email?></td>
+            </tr>
+            <tr>
+                <td>Website : </td>
+                <td><?= $website?></td>
+            </tr>
+            <tr>
+                <td>Komentar</td>
+                <td><?= $comment?></td>
+            </tr>
+            <tr>
+                <td>Gender : </td>
+                <td><?= $gender?></td> 
+            </tr>
+    </table>
 </body>
 
 </html>
